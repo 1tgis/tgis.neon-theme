@@ -1,0 +1,16 @@
+{
+    "Properties": [
+        {
+            "Name": "MainColor",
+            "PublicName": "Changes the bright color of the theme",
+            "Type": "String",
+            "DefaultValue": "#A8FF01"
+        },
+        {
+            "Name": "ShowEventDescriptionInCalendar",
+            "PublicName": "Show event description on calendar",
+            "Type": "Bool",
+            "DefaultValue": true
+        }
+    ]
+}
