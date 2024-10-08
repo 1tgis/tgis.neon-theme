@@ -11,8 +11,8 @@
                 "Component": "HeaderBlockComponent",
                 "ComponentOptions": {
                     "Vars": {
-                        "header": "Season progress",
-                        "subHeader": "/ points"
+                        "header": "Standings",
+                        "subHeader": "Drivers"
                     }
                 }
             },
@@ -169,11 +169,11 @@
                                         ]
                                     },
                                     {
-                                        "Condition": "{Item.Points, Converter=NumberGreater, Parameter=149}",
+                                        "Condition": "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=1}",
                                         "Setters": [
                                             {
                                                 "Property": "Foreground",
-                                                "Value": "{SeasonProgressPointsTopForeground}"
+                                                "Value": "{SeasonProgressPositionTop1Foregound}"
                                             }
                                         ]
                                     },
@@ -192,15 +192,6 @@
                                             {
                                                 "Property": "Background",
                                                 "Value": "{SeasonProgressPointsPoleBackground}"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "Condition": "{Item.IsWorstEvent}",
-                                        "Setters": [
-                                            {
-                                                "Property": "Foreground",
-                                                "Value": "{SeasonProgressPositionWorstEventForeground}"
                                             }
                                         ]
                                     }

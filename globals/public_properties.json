@@ -2,9 +2,9 @@
     "Properties": [
         {
             "Name": "MainColor",
-            "PublicName": "Changes the bright color of the theme",
+            "PublicName": "Main Color of the theme (No #)",
             "Type": "String",
-            "DefaultValue": "#A8FF01"
+            "DefaultValue": "A8FF01"
         },
         {
             "Name": "ShowEventDescriptionInCalendar",

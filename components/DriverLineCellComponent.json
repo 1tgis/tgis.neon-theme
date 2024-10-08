@@ -72,6 +72,7 @@
                     "Source": "{Item.Driver.BadgeText}",
                     "HorizontalAlignment": "Left",
                     "VerticalAlignment": "Top",
+                    "Foreground": "FFFFFF",
                     "FontName": "{FontNameDefault}",
                     "FontSize": 16
                 }
@@ -97,7 +98,7 @@
                         {
                             "BlockType": "text",
                             "Source": "{Item.Team.Name}",
-                            //"MarginRight": 4,
+                            "Foreground": "{Item.Team.Color}",
                             "HorizontalAlignment": "Left",
                             "VerticalAlignment": "Center",
                             "FontName": "{FontNameDefault}",

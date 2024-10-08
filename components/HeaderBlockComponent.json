@@ -14,21 +14,24 @@
                 //league name
                 {
                     "BlockType": "stack",
-                    "VerticalAlignment": "Center",
+                    "VerticalAlignment": "Top",
+                    "Orientation": "Vertical",
                     "Items": [
                         {
                             "BlockType": "text",
+                            "Name": "txtLeagueName",
                             "Source": "{Season.LeagueInfo.LeagueName}",
                             "FontName": "{FontNameWide}",
-                            "FontSize": 20
+                            "FontSize": 20,
+                            "MarginBottom": 5
                         },
                         {
                             "BlockType": "text",
-                            "Source": " · {Season.Name}",
+                            "Source": "{Season.Name} ",
                             "VerticalAlignment": "Center",
                             "FontName": "{FontNameWide}",
-                            "FontSize": 16,
-                            "Foreground": "{ForegroundDarker}"
+                            "FontSize": 32,
+                            "Foreground": "#FFFFFF"
                         }
                     ]
                 },
@@ -37,6 +40,7 @@
                 {
                     "Name": "headerMainContent",
                     "BlockType": "stack",
+                    "HorizontalAlignment": "Center",
                     "Spacing": 8,
                     "Items": [
                         // {
@@ -48,19 +52,10 @@
                         {
                             "BlockType": "text",
                             "VerticalAlignment": "Center",
-                            "Source": "<header>",
+                            "HorizontalAlignment": "Center",
+                            "Source": "<subHeader> <header> after Round {Season.SeasonCurrentNumberEvent}",
                             "FontName": "{FontNameWide}",
-                            "FontSize": 28
-                        },
-
-                        {
-                            "BlockType": "text",
-                            "MarginLeft": 12,
-                            "MarginTop": 4,
-                            "VerticalAlignment": "Center",
-                            "Source": "<subHeader>",
-                            "FontName": "{FontNameWide}",
-                            "FontSize": 18
+                            "FontSize": 42
                         }
                     ]
                 }
@@ -79,33 +74,9 @@
                     "BlockType": "stack",
                     "Items": [
                         {
-                            "BlockType": "stack",
-                            "Orientation": "Vertical",
-                            "Spacing": 8,
-                            "Items": [
-                                {
-                                    "BlockType": "text",
-                                    "HorizontalAlignment": "Right",
-                                    "Source": "[Round] {Season.SeasonCurrentNumberEvent} [of] {Season.SeasonOverallNumberEvents}",
-                                    "FontName": "{FontNameWide}",
-                                    "Foreground": "{ForegroundDarker}",
-                                    "FontSize": 18
-                                },
-
-                                {
-                                    "BlockType": "text",
-                                    "HorizontalAlignment": "Right",
-                                    "Source": "[Season progress] {Season.SeasonProgressPercent}%",
-                                    "FontName": "{FontNameWide}",
-                                    "FontSize": 18
-                                }
-                            ]
-                        },
-
-                        {
                             "Name": "leagueLogo",
                             "BlockType": "image",
-                            "Height": 82,
+                            "Height": 100,
                             "MarginLeft": 36,
                             "Source": "{Season.LeagueInfo.LeagueLogo}"
                         }

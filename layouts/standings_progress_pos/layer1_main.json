@@ -12,7 +12,7 @@
                 "ComponentOptions": {
                     "Vars": {
                         "header": "Season progress",
-                        "subHeader": "/ positions"
+                        "subHeader": "Drivers"
                     }
                 }
             },
@@ -148,7 +148,7 @@
                                     "FontName": "{FontNameDefault}",
                                     "FontSize": 34,
                                     "HorizontalAlignment": "Center",
-                                    "Foreground": "{SeasonProgressPositionDefaultForeground}"
+                                    "Foreground": "{MainColor}"
                                 },
                                 "Triggers": [
                                     {
@@ -160,29 +160,10 @@
                                             },
                                             {
                                                 "Property": "Foreground",
-                                                "Value": "{SeasonProgressPositionNotClassifiedForeground}"
+                                                "Value": "{MainColor}"
                                             }
                                         ]
                                     },
-                                    {
-                                        "Condition": "{Item.RaceMajorPosition, Converter=NumberLess, Parameter=11}",
-                                        "Setters": [
-                                            {
-                                                "Property": "Foreground",
-                                                "Value": "{SeasonProgressPositionTop10Foreground}"
-                                            }
-                                        ]
-                                    },
-                                    // {
-                                    //     "Condition": "{Item.Position, Converter=NumberLess, Parameter=4}",
-                                    //     "Setters":
-                                    //     [
-                                    //         {
-                                    //             "Property": "Foreground",
-                                    //             "Value": "#DDDD55"
-                                    //         }
-                                    //     ]
-                                    // },
                                     {
                                         "Condition": "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=1}",
                                         "Setters": [

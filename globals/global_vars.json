@@ -3,8 +3,9 @@
     "FontNameWide": "Unbounded-SemiBold",
     "FontNameBold": "Unbounded-Bold",
     "FontNameBlack": "Unbounded-ExtraBold",
+    "FontNameItalic": "Unbounded-ExtraLight",
     "FontSizeDefault": 20,
-    "ForegroundDefault": "{MainColor}",
+    "ForegroundDefault": "#{MainColor}",
     "BackgroundDefault": "#272727",
 
     //margins
@@ -32,9 +33,6 @@
     "SeasonProgressPositionWorstEventForeground": "#585858",
     "SeasonProgressPositionTop10Foreground": "#CCCCCC",
     "SeasonProgressPositionTop1Foregound": "#DDDD11",
-    "SeasonProgressPointsForeground": "#AFAFAF",
-    "SeasonProgressPointsZeroForeground": "#666666",
-    "SeasonProgressPointsTopForeground": "#C2C2C2",
     "SeasonProgressPointsFastestLapForeground": "#C719C7",
-    "SeasonProgressPointsPoleBackground": "#420012"
+    "SeasonProgressPointsPoleBackground": "#1A{MainColor}"
 }
