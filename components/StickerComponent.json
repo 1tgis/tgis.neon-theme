@@ -1,37 +1,49 @@
 {
     "ComponentName": "StickerComponent",
     "BlockType": "stack",
-    "Padding": "24,12,24,12",
-    "Background": "<bg>",
     "VerticalAlignment": "Center",
-    "Spacing": 28,
+    "Orientation": "Vertical",
+    "Spacing": 0,
 
     "Items": [
         {
             "Name": "txt1",
             "BlockType": "text",
+            "FontName": "{FontNameItalic}",
             "Source": "<header>",
-            "VerticalAlignment": "Center",
-            "Foreground": "#AEBBBBBB",
+            "Background": "#1AFFFFFF",
+            "VerticalAlignment": "Bottom",
+            "Foreground": "#{MainColor}",
+            "Padding": "5,5,5,5",
             "FontSize": 24
         },
-
         {
-            "Name": "txt1",
-            "BlockType": "text",
-            "Source": "<main>",
-            "VerticalAlignment": "Center",
-            "Foreground": "#EEAFAFAF",
-            "FontSize": 36
-        },
-
-        {
-            "Name": "txt1",
-            "BlockType": "text",
-            "Source": "<data>",
-            "VerticalAlignment": "Center",
-            "Foreground": "#BCBBBBBB",
-            "FontSize": 28
+            "BlockType": "stack",
+            "Orientation": "Horizontal",
+            "Padding": "5,5,5,5",
+            "Background": "<bg>",
+            "Items": [
+                {
+                    "Name": "txt1",
+                    "BlockType": "text",
+                    "Source": "<main>",
+                    "VerticalAlignment": "Center",
+                    "PaddingBottom": 5,
+                    "Foreground": "#FFFFFF",
+                    "FontSize": 36
+                },
+        
+                {
+                    "Name": "txt1",
+                    "BlockType": "text",
+                    "MarginLeft": 10,
+                    "Source": "<data>",
+                    "FontName":"{FontNameItalic}",
+                    "VerticalAlignment": "Center",
+                    "Foreground": "#FFFFFF",
+                    "FontSize": 36
+                }
+            ]
         }
     ]
 }

@@ -73,7 +73,7 @@
 
                         //interval
                         {
-                            "Header": "[Interval]",
+                            "Header": "[Gap]",
                             "Template": {
                                 "Padding": "12, 0",
 
@@ -263,7 +263,8 @@
                                 "bg": "{FastestLapRaceStickerBackground}",
                                 "header": "FASTEST LAP",
                                 "main": "{Session.FastestLapDriver.Name}",
-                                "data": "{Session.FastestLapTime}"
+                                "data": "{Session.FastestLapTime}",
+                                "img": "{Session.FastestLapDriver.Team.LogotypePath}"
                             }
                         }
                     },
